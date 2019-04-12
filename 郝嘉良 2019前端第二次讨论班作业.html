@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	.wrapper{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		margin:60px;
+		width:180px;
+		height:50px;
+		border:2px solid #fff;
+	}
+
+	.content{
+		padding:6px;
+		font-size:18px;
+		text-align:center;
+		border:2px solid #000;
+	}
+	
+	.wrapper:hover{
+		border:2px solid black;
+	}
+	/*.wrapper:hover{
+		border:2px solid black;
+	}*/
+
+	.demo{
+		position:absolute;
+		top:300px;
+		left:300px;
+	}
+
+	.demo:hover::after{
+		display:block;
+		content:"tooltip";
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<div class="content">James Harden</div>
+	</div>
+
+	<div class="demo">James Harden</div>
+</body>
+</html>
